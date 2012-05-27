@@ -3,14 +3,13 @@ export WORKSPACE2=$PWD
 mkdir -p ../android
 cd ../android
 export WORKSPACE=$PWD
-echo $ANDROID_JAVA_HOME
 
 if [ ! -d hudsonGummy ]
 then
-  git clone git://github.com/teamgummy/hudsonGummy.git
+  git clone git://github.com/sixstringsg/hudson_aokpcb
 fi
 
-cd hudsonGummy
+cd hudson_aokpcb
 git pull
 
 exec ./build.sh
